@@ -1,0 +1,28 @@
+1)TWO POINTERS:
+Types of Two Pointers
+1️⃣ Moving in the Same Direction (Left to Right)
+One pointer (pos) → Tracks where to place the element.
+Another pointer (i) → Moves through the array, finding values.
+📌 Example: Moving zeros to the end
+
+📝 Problem:
+Move all 0s to the end while keeping non-zero numbers in the same order.
+
+🔹 Step-by-step:
+Move i through the array.
+If nums[i] is not zero, swap it with nums[pos].
+Move pos forward to prepare for the next swap.
+
+2️⃣ Moving Towards Each Other (Start & End)
+One pointer (left) → Starts at the beginning.
+Another pointer (right) → Starts at the end.
+Move them toward each other until they meet.
+📌 Example: Checking if a word is a palindrome
+
+📝 Problem:
+Check if a word is the same forward and backward.
+
+🔹 Step-by-step:
+Start left at the first letter and right at the last letter.
+If they don’t match, return false (not a palindrome).
+Move both pointers towards the center and keep checking.
